@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/hamster.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="HamsterBody" type="RigidBody2D"]
+mass = 0.00102041
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 11.112 )
+scale = Vector2( 7, 7 )
+shape = SubResource( 1 )
+
+[node name="HamsterSprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
